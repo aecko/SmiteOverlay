@@ -1,0 +1,42 @@
+﻿<Window x:Class="SmiteOverlay.MatchInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmiteOverlay"
+        mc:Ignorable="d"
+        AllowsTransparency="True" WindowStyle="None"
+        Title="MainWindow" Height="265.292" Width="318.877" Opacity="0.99" MouseDown="Window_MouseDown" ShowInTaskbar="True" Topmost="True" Activated="Window_Activated" Deactivated="Window_Deactivated" LocationChanged="Window_LocationChanged">
+    <Window.Background>
+        <SolidColorBrush Opacity="0.2" Color="Black"/>
+    </Window.Background>
+    <Grid>
+        <Label x:Name="MatchInfo_Label" Content="Match Info" Height="40" Margin="102,8,99,0" VerticalAlignment="Top" Foreground="White" Cursor="Arrow" FontSize="22"/>
+        <Label x:Name="Team1_Label" Content="Team 1" Height="30" Margin="47,79,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="67" FontSize="16"/>
+        <Label x:Name="Team2_Label" Content="Team 2" Height="30" Margin="0,79,47,0" VerticalAlignment="Top" HorizontalAlignment="Right" Foreground="White" Cursor="Arrow" Width="67" FontSize="16"/>
+        <Label x:Name="Team1_Player1_Label" Content="" Height="25" Margin="10,127,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="104" MouseDown="PlayerName_MouseDown"/>
+        <Label x:Name="Team1_Player2_Label" Content="" Height="25" Margin="10,147,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="104" MouseDown="PlayerName_MouseDown"/>
+        <Label x:Name="Team1_Player3_Label" Content="" Height="25" Margin="10,167,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="104" MouseDown="PlayerName_MouseDown"/>
+        <Label x:Name="Team1_Player4_Label" Content="" Height="25" Margin="10,187,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="104" MouseDown="PlayerName_MouseDown"/>
+        <Label x:Name="Team1_Player5_Label" Content="" Height="25" Margin="10,207,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="104" MouseDown="PlayerName_MouseDown"/>
+        <Label x:Name="Team2_Player1_Label" Content="" Height="25" Margin="168,127,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="104" MouseDown="PlayerName_MouseDown"/>
+        <Label x:Name="Team2_Player2_Label" Content="" Height="25" Margin="168,147,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="104" MouseDown="PlayerName_MouseDown"/>
+        <Label x:Name="Team2_Player3_Label" Content="" Height="25" Margin="168,167,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="104" MouseDown="PlayerName_MouseDown"/>
+        <Label x:Name="Team2_Player4_Label" Content="" Height="25" Margin="168,187,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="104" MouseDown="PlayerName_MouseDown"/>
+        <Label x:Name="Team2_Player5_Label" Content="" Height="25" Margin="168,207,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="104" MouseDown="PlayerName_MouseDown"/>
+        <Label x:Name="Team1_Label_Copy" Content="Player Name - Level" Height="30" Margin="19,109,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="117"/>
+        <Label x:Name="Team1_Player1_Level_Label" Content="" Height="25" Margin="119,127,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="44" />
+        <Label x:Name="Team1_Player2_Level_Label" Content="" Height="25" Margin="119,147,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="44"/>
+        <Label x:Name="Team1_Player3_Level_Label" Content="" Height="25" Margin="119,167,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="44"/>
+        <Label x:Name="Team1_Player4_Level_Label" Content="" Height="25" Margin="119,187,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="44"/>
+        <Label x:Name="Team1_Player5_Level_Label" Content="" Height="25" Margin="119,207,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="44"/>
+        <Label x:Name="Team2_Player1_Level_Label" Content="" Height="25" Margin="276,127,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="37"/>
+        <Label x:Name="Team2_Player2_Level_Label" Content="" Height="25" Margin="276,147,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="37"/>
+        <Label x:Name="Team2_Player3_Level_Label" Content="" Height="25" Margin="276,167,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="37"/>
+        <Label x:Name="Team2_Player4_Level_Label" Content="" Height="25" Margin="276,187,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="37"/>
+        <Label x:Name="Team2_Player5_Level_Label" Content="" Height="25" Margin="276,207,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" Cursor="Arrow" Width="37"/>
+        <Label x:Name="Team1_Label_Copy1" Content="Player Name - Level" Height="30" Margin="0,109,24,0" VerticalAlignment="Top" Foreground="White" Cursor="Arrow" HorizontalAlignment="Right" Width="117"/>
+        <Button x:Name="GoBack_Button" Content="3" FontFamily="Marlett" FontSize="20" Margin="10,10,287,232" Foreground="White" Background="Black" BorderBrush="White" Click="GoBack_Button_Click"/>
+        <Button x:Name="GoToItems_Button" Content="Items" Margin="114,47,114,0" VerticalAlignment="Top" Background="Black" Foreground="White" BorderBrush="White" Height="27" Click="Button_Click" Cursor="Arrow" ForceCursor="True" HorizontalAlignment="Center" Width="91"/>
+    </Grid>
+</Window>
